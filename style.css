@@ -1,0 +1,786 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    gap: 45%;
+    justify-content: space-evenly;
+    font-family: "JetBrains Mono", monospace;
+    padding: 20px;
+    margin: 0;
+    font-size: 0.85em;
+    font-weight: 300;
+    color: grey;
+    width: 100%;
+}
+html{
+    scroll-behavior: smooth;
+}
+.navbar .text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    padding-left: -50px;
+    margin-left: -70px;
+}
+.navbar .text2{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 40px;
+}
+.navbar h3 {
+    cursor: pointer;
+}
+.navbar  h3:hover{
+    color: black;
+}
+.underline{
+    width: 100%;
+    color: gray;
+}
+/* navbar2 */
+.navbar2 {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    align-items: center;
+    width: 100%;
+    font-family: "JetBrains Mono", monospace;
+
+}
+.navbar2 .box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-left: 70px;
+}
+.navbar2 .box .text{
+    font-family: "JetBrains Mono", monospace;
+    font-size: 0.85rem;
+    font-weight: 400;
+}
+.navbar2 .box .search-box{
+    display: flex;
+}
+.navbar2 .box .search-box input{
+    text-decoration: none;
+    border-left: none;
+    border: 1px solid grey;
+    height: 2rem;
+    padding: 0.6rem;
+    font-family: "JetBrains Mono", monospace;
+}
+.navbar2 .box .search-box i{
+    padding: 0.45rem;
+    cursor: pointer;
+}
+.navbar2 .box .drop-down{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+.navbar2 .box h3{
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.navbar2 .box2 .icons li{
+    list-style: none;
+}
+.box2 .icons ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    padding-right: 6rem;
+    margin-right: 2.1rem;
+}
+.box2 .icons ul li a {
+    color: black;
+    font-size: 1.3rem;
+}
+.photo-gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4em;
+    width: 90%;
+
+    padding:2em;
+}
+.photo-gallery .container{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 850px 550px;
+    grid-template-rows: 300px 300px;
+    grid-template-areas:
+    "box1 box3 "
+    "box1 box2";
+}
+.photo-gallery .container  .box3{
+    background-image: url('images/woman-9532283_1920.jpg');
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-size:cover;
+    border-radius: 1.2em;
+    position:relative;
+}
+.photo-gallery .container  .box2{
+    background-image: url('images/balancing-1868051_1920.jpg');
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-size:cover;
+    border-radius: 1.2em;
+    position: relative;
+}
+
+.photo-gallery .container  .box1{
+    background-image: url('images/artistic-9176859_1920.jpg');
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;display: relative;
+    background-size:cover;
+    border-radius: 1.2em;
+    position: relative;
+}
+.container .box1 .content{
+    height:100%;
+    width:70%;
+    top:0;
+    left: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    position:relative;
+}
+.box1 .content h1{
+    position: absolute;
+    font-weight: 400;
+    font-size: 3em;
+    color: #fff;
+    left: 20px;
+    top: 20px
+}
+.box1 .content h3{
+    position: absolute;
+    font-weight: 400;
+    font-size: 1.2em;
+    color: #fff;
+    left: 20px;
+    top: 40%;
+}
+.box1 .content a{
+    position: absolute;
+    font-weight: 200;
+    font-size: 1.1em;
+    color: #fff;
+    left: 20px;
+    padding:20px;
+    top: 60%;
+    text-decoration: none;
+    width: 250px;
+    height: 50px;
+    background: black;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.box1 .content a:hover{
+    background: #fff;
+    color: black;
+    font-weight: 300;
+}
+.box3 .content h3{
+    position: relative;
+    left: 30px;
+    top: 30px;
+    font-size: 2rem;
+    font-weight: 400px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-weight: 300;
+}
+
+.box2 .content h3{
+    position: relative;
+    left: 30px;
+    top: 30px;
+    font-weight: 300;
+    font-size: 2rem;
+    font-weight: 400px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+}
+.photo-gallery2{
+    display: flex;
+    padding: 25px;
+    margin:0;
+    width:100%;
+    justify-content:center;
+    align-items: center;
+    margin-top: -7%;
+}
+.photo-gallery2 .container{
+    display: grid;
+    grid-template-columns: 450px 500px 450px ;
+    grid-template-rows: 300px 300px 300px;
+    gap: 10px;
+
+    height: 300px;
+}
+.photo-gallery2 .container .photo1,.photo2,.photo3{
+    position: relative;
+}
+.photo-gallery2 .photo1 .content{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    padding: 30px;
+}
+.photo-gallery2 .photo1 .content h1{
+    padding-bottom: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 2.5em;
+}
+ .photo1 .content p{
+    padding-bottom: 20px;
+     font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+.photo1 .content h3{
+    width: 200px;
+    height: 60px;
+    font-family: "Roboto", sans-serif;
+    background: black;
+    color: white;
+    display: flex;
+    font-weight: 200;
+    justify-content: center;
+    align-items:center;
+    border-radius: 30px;
+    cursor: pointer;
+}
+.photo1 .content h3:hover{
+    background: #fff;
+    color: black;
+    font-weight: 300;
+    border: 1px solid black;
+}
+.photo2 .content h3{
+    position:absolute;
+    left:20px;
+    bottom:20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 200;
+}
+
+.photo3 .content h3{
+    position:absolute;
+    left:20px;
+    bottom:20px;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 200;
+}
+ .photo2{
+    background-image: url("images/portrait-4599553_1280.jpg");
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-size:cover;
+    border-radius: 1.2em;
+    position:relative;
+}
+ .photo3 {
+    background-image: url('images/ali-ghafouri-RxBnnZ2vxZc-unsplash.jpg');
+    width:100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
+    background-size:cover;
+    border-radius: 1.2em;
+    position:relative;
+}
+ .photo-gallery3 {
+     width: 100%;
+     display: flex;
+     justify-content: space-around;
+     align-items: center;
+ }
+.photo-gallery3 .navbar .text h2{
+    font-size: 1.6rem;
+    font-weight: 400;
+    color: #000;
+}
+.photo-gallery3 .items{
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.photo-gallery3 .items h3{
+    height: 40px;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.3rem;
+    font-weight: 100;
+    color: #000;
+}
+.photo-gallery3 .items h3:hover{
+    background: black;
+    color: #fff;
+    font-weight: 100;
+}
+/* sneaker 1*/
+.sneaker-gallery{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 350px 350px 700px;
+    grid-template-rows: 300px 300px 300px;
+    gap: 10px;
+    justify-content: center;
+}
+.sneaker-gallery .shoe1,.shoe2,.shoe3{
+    position: relative;
+}
+
+.sneaker-gallery .shoe1 .content{
+    position: absolute;
+    bottom: -3.5em;
+    left:0;
+}
+.sneaker-gallery .shoe2 .content{
+    position: absolute;
+    bottom: -3.5em;
+    left:0;
+    font-family: "Roboto", sans-serif;
+}
+.sneaker-gallery .shoe3 .content{
+    position: absolute;
+    bottom: -3.5em;
+    left:0;
+}
+.sneaker-gallery .shoe1 {
+    background-image: url("sneakers/fachry-zella-devandra-GSGBk80Fwlg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 1.2em;
+    object-fit:cover;
+}
+.sneaker-gallery .shoe2 {
+    background-image: url("sneakers/howard-bouchevereau-BTuUO8o2iK4-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 1.2em;
+    object-fit:cover;
+}
+.sneaker-gallery .shoe3 {
+    background-image: url("sneakers/taylor-smith-aDZ5YIuedQg-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 1.2em;
+    object-fit:cover;
+}
+.sneaker-gallery .content h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.sneaker-gallery .content h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.1em
+}
+/* sneaker 1 End */
+
+/* sneaker 2 start */
+.sneaker-gallery2{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 700px 350px 350px;
+    grid-template-rows: 300px 300px 300px;
+    gap: 10px;
+    justify-content: center;
+    margin-top:-32em;
+}
+.sneaker-gallery2 .shoe3,.shoe4,.shoe5{
+    position: relative;
+}
+
+.sneaker-gallery2 .shoe3 .content2{
+    position: absolute;
+    bottom: -3.5em;
+    left:0;
+}
+.sneaker-gallery2 .shoe4 .content2{
+    position: absolute;
+    bottom: -3.5em;
+    left:0;
+    font-family: "Roboto", sans-serif;
+}
+.sneaker-gallery2 .shoe5 .content2{
+    position: absolute;
+    bottom: -3.5em;
+    left:0;
+}
+.sneaker-gallery2 .shoe3 {
+    background-image: url("sneakers/linda-xu-fUEP0djb1hA-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 1.2em;
+    object-fit:cover;
+}
+.sneaker-gallery2 .shoe4 {
+    background-image: url("sneakers/alexander-rotker-l8p1aWZqHvE-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 1.2em;
+    object-fit:cover;
+}
+.sneaker-gallery2 .shoe5 {
+    background-image: url("sneakers/robin-davidson-oDnPch2Fu1U-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 1.2em;
+    object-fit:cover;
+}
+.sneaker-gallery2 .content2 h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 1.2em;
+}
+.sneaker-gallery2 .content2 h3{
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+/* sneaker 2 End*/
+
+/* Explore Colors Start*/
+.explore .container{
+    width:100%;
+    height:auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -32%;
+    font-family: "JetBrains Mono";
+}
+.explore .container .text h2{
+    font-size: 2em;
+    font-weight: 300;
+}
+
+.explore .container .colors{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+}
+.explore .container .color-box{
+    display: grid;
+    gap: 20px;
+    grid-template-columns: 200px 200px 200px 200px ;
+    grid-template-rows: 60px 60px ;
+    grid-template-areas:
+        "box-1 box-2 box-3 box-4 ";
+ }
+#c-box {
+    border-radius: 40px;
+    border: 1px solid #000080;
+}
+.explore .container .color1{
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: 	#8B008B;
+}
+/* Explore Colors End*/
+
+/* Banner section */
+.Banner{
+    display: flex;
+    height: 100vh;
+    background-image: url("images/oladimeji-odunsi-lNm2Px2UYB4-unsplash.jpg");
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 1.2em;
+    object-fit:cover;
+    position: relative;
+}
+
+.Banner .content .txt{
+    position: absolute;
+    left: 7rem;
+    top: 8rem;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    justify-content:left;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    gap: 50px
+}
+.Banner .content .txt h3{
+    font-size: 2.7em;
+    font-weight: 300;
+
+}
+.Banner .content .txt h1{
+    font-size: 3em;
+    font-weight: 500;
+}
+.Banner .content .txt p{
+    font-size: 1.7em;
+    font-weight: 300;
+}
+#sara{
+    font-weight: 600;
+    font-size: 2em;
+}
+#co{
+    font-weight: 200;
+    margin-top: -30px;
+}
+.why-you p{
+    font-family: "JetBrains Mono";
+    margin: 50px;
+    display:flex;
+    justify-content: left;
+    font-size: 2em;
+    font-weight: 400;
+    color:#000;
+}
+.another1{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.another1 .box{
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    gap: 30px;
+}
+.another1 .box .icon {
+    border:1px solid #000;
+    width:70px;
+    height:70px;
+    border-radius: 50%;
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    background-color: #000;
+    cursor: pointer;
+    transition:ease-in-out;
+}
+
+.another1 .box .icon a i{
+    color: #fff;
+    font-size: 25px;
+    transition:ease-in-out;
+}
+.another1 .box .icon a i:hover{
+    color: grey;
+}
+.another1 .box h2{
+    font-size: 1.8em;
+    font-weight: 300;
+    font-family: "JetBrains Mono", monospace;
+}
+.another1 .box p{
+    font-size: 1em;
+    font-weight: 200;
+    font-family: "JetBrains Mono", monospace;
+    margin-bottom:1em;
+}
+.another2 .text p{
+    font-size: 1.8em;
+    font-weight: 300;
+    font-family: "JetBrains Mono", monospace;
+    padding:30px;
+}
+.another2 .context{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-bottom: 20px;
+}
+.another2 .context .photo{
+    height: 500px;
+    width:  500px;
+    background-image: url("images/thom-bradley-mwa_nzFpnJw-unsplash.jpg");
+    margin-left: 50px;
+    margin-right: 50px;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:cover;
+    border-radius: 1.2em;
+    object-fit:cover;
+    position: relative;
+}
+.another2 .context .photo p{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    font-family: "Roboto", sans-serif;
+    color: #fff;
+    font-size: 2em;
+    font-weight: 400;
+}
+.another2 .context .p{
+    height: 500px;
+    width: 500px;
+}
+.another2 .how-to{
+    display:flex;
+    justify-content: left;
+    align-items: left;
+    flex-direction: column;
+    gap: 40px;
+    position: relative;
+}
+.another2 .how-to h2{
+    font-size: 1.8em;
+    font-weight: 500;
+    font-family: "JetBrains Mono", monospace;
+}
+.another2 .how-to p{
+    font-size: 1.em;
+    font-weight: 500;
+    font-family: "JetBrains Mono", monospace;
+
+}
+.another2 .how-to a{
+    width: 200px;
+    height: 40px;
+    padding: 30px;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    transition: ease-in-out;
+    text-decoration:none;
+    color: black;
+    font-family:"JetBrains Mono", monospace;
+    border-radius: 30px;
+    font-size: 1.2em;
+    font-weight: 300;
+}
+.another2 .how-to a:hover{
+    color: #fff;
+    background: #000;
+}
+.down{
+    height:50px;
+    width:100%;
+    background-color: #000;
+    font-family:"JetBrains Mono", monospace;
+    color: #fff;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+.down a{
+    text-decoration:none;
+    color:#fff;
+    font-size: 0.8em;
+    font-weight: 200;
+}
+.down p{
+    text-decoration:none;
+    color:#fff;
+    font-size: 1em;
+    font-weight: 300;
+}
+.down h3 {
+    text-decoration:none;
+    color:#fff;
+    font-size: 1.1em;
+    font-weight: 100;
+}
+.down h3 a{
+    letter-spacing: 1px;
+}
+.down h4{
+    font-weight: 100;
+}
+/* Scroll up button*/
+
+.to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 32px;
+    z-index: 10;
+    background: #fff;
+    width:40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+    .icon .fa-solid{
+        font-size: 1.6rem;
+        color: #1f1f1f;
+        text-decoration: none;
+        
+    }
+}
+.to-top:hover {
+    background: #000;
+    color: #fff;
+    .icon .fa-solid {
+        color: #fff;
+    }
+}
+.to-top.active {
+    opacity: 1;
+    pointer-events: auto;
+    bottom: 32px;
+}
